@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import nesLabLogo from "./assets/nes-lab-logo.svg";
 
 const RAW_API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 const API_BASE_URL = (RAW_API_BASE_URL || "").replace(/\/+$/, "");
@@ -233,20 +234,17 @@ export default function SERMLApp() {
 
       <header className="border-b border-[#ddd2bf] bg-[#fffaf0]/95 backdrop-blur">
         <div className="mx-auto max-w-7xl px-4 py-6 md:px-8">
-          <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
             <div className="max-w-4xl">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#7d6b52]">SERML Interface</p>
-              <h1 className="mt-2 text-2xl font-semibold tracking-tight text-[#1f2937] md:text-[2rem]">
+              <h1 className="text-2xl font-semibold tracking-tight text-[#1f2937] md:text-[2rem]">
                 Skill-Based LLM Driven Expert Routing Pipeline
               </h1>
               <p className="mt-2 text-sm text-slate-600">
-                Compact interface for documenting skill prediction, expert routing, and final harmful-speech decisions.
+                Multilabel Harmful Speech Detection Pipeline for Social Media Post
               </p>
             </div>
 
-            <div className="rounded-full border border-[#d8cdb9] bg-white px-4 py-2 text-xs text-slate-600 shadow-sm">
-              Backend: {API_BASE_URL || "MISSING (set VITE_API_BASE_URL in .env and restart Vite)"}
-            </div>
+            <img src={nesLabLogo} alt="NES Lab logo" className="h-auto w-[160px] shrink-0 self-start md:w-[190px]" />
           </div>
         </div>
       </header>
