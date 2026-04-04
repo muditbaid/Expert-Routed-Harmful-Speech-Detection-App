@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import nesLabLogo from "./assets/nes-lab-logo.svg";
 
 const RAW_API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 const API_BASE_URL = (RAW_API_BASE_URL || "").replace(/\/+$/, "");
@@ -234,7 +233,7 @@ export default function SERMLApp() {
 
       <header className="border-b border-[#ddd2bf] bg-[#fffaf0]/95 backdrop-blur">
         <div className="mx-auto max-w-7xl px-4 py-6 md:px-8">
-          <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+          <div className="flex flex-col gap-4">
             <div className="max-w-4xl">
               <h1 className="text-2xl font-semibold tracking-tight text-[#1f2937] md:text-[2rem]">
                 Skill-Based LLM Driven Expert Routing Pipeline
@@ -243,8 +242,6 @@ export default function SERMLApp() {
                 Multilabel Harmful Speech Detection Pipeline for Social Media Post
               </p>
             </div>
-
-            <img src={nesLabLogo} alt="NES Lab logo" className="h-auto w-[160px] shrink-0 self-start md:w-[190px]" />
           </div>
         </div>
       </header>
