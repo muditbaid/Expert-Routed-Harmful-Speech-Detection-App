@@ -496,6 +496,43 @@ export default function SERMLApp() {
             </section>
           </main>
         </div>
+
+        <footer className="mt-8 rounded-[28px] border border-[#ddd2bf] bg-[#fffaf3] p-6 shadow-[0_18px_45px_rgba(99,85,63,0.08)]">
+          <p className="text-sm font-semibold tracking-wide text-slate-800">Contact</p>
+          <div className="mt-4 grid gap-3 text-sm text-slate-600 md:grid-cols-2">
+            <p>
+              <span className="font-semibold text-slate-800">Mudit Baid</span>
+            </p>
+            <p>
+              <span className="font-semibold text-slate-800">Email:</span>{" "}
+              <a className="text-[#2f6f73] hover:underline" href="mailto:muditb0712@gmail.com">
+                muditb0712@gmail.com
+              </a>
+            </p>
+            <p>
+              <span className="font-semibold text-slate-800">Project Page:</span>{" "}
+              <a
+                className="text-[#2f6f73] hover:underline"
+                href="https://muditbaid.github.io/Skill-Based-Expert-Routing-System-For-Multilabel-Hate-Speech-Detection/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View project page
+              </a>
+            </p>
+            <p>
+              <span className="font-semibold text-slate-800">GitHub:</span>{" "}
+              <a
+                className="text-[#2f6f73] hover:underline"
+                href="https://github.com/muditbaid/Skill-Based-Expert-Routing-System-For-Multilabel-Hate-Speech-Detection"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View repository
+              </a>
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
   );
